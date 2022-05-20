@@ -52,7 +52,6 @@ export default class ColumnChart extends Component {
         () => this.scrollView.scrollTo(this.props.initialScrollPosition), this.props.initialScrollTimeOut
       )
     }
-    
   }
 
   renderColumns (fadeAnim) {
@@ -153,7 +152,7 @@ export default class ColumnChart extends Component {
         <View style={styles.mainContainer}>
           <ScrollView ref={scrollView => this.scrollView = scrollView} horizontal>
             <View>
-              <View ref='chartView' style={styles.chartContainer, {marginRight: this.props.defaultLastColumnMargin}}>
+              <View ref='chartView' style={[styles.chartContainer, {marginRight: this.props.defaultLastColumnMargin}]}>
                 {drawYAxis(this.props.yAxisColor)}
                 {drawGuideLine(this.state.guideArray, this.props.yAxisGridLineColor)}
                 {this.renderColumns(fadeAnim)}
