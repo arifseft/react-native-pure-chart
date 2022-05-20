@@ -153,7 +153,7 @@ export default class ColumnChart extends Component {
         <View style={styles.mainContainer}>
           <ScrollView ref={scrollView => this.scrollView = scrollView} horizontal>
             <View>
-              <View ref='chartView' style={styles.chartContainer}>
+              <View ref='chartView' style={styles.chartContainer, {marginRight: this.props.defaultLastColumnMargin}}>
                 {drawYAxis(this.props.yAxisColor)}
                 {drawGuideLine(this.state.guideArray, this.props.yAxisGridLineColor)}
                 {this.renderColumns(fadeAnim)}
@@ -229,6 +229,7 @@ ColumnChart.defaultProps = {
   height: 100,
   defaultColumnWidth: 40,
   defaultColumnMargin: 20,
+  defaultLastColumnMargin: 0,
   defaultBorderColor: '#FFFFFF',
   primaryColor: '#297AB1',
   highlightColor: 'red',

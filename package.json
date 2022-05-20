@@ -1,5 +1,5 @@
 {
-  "name": "react-native-pure-chart",
+  "name": "arifseft@react-native-pure-chart",
   "version": "0.0.24",
   "description": "",
   "devDependencies": {
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oksktank/react-native-pure-chart.git"
+    "url": "git+https://github.com/arifseft/react-native-pure-chart.git"
   },
   "keywords": [
     "react-native",
@@ -36,7 +36,7 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oksktank/react-native-pure-chart/issues"
+    "url": "https://github.com/arifseft/react-native-pure-chart/issues"
   },
-  "homepage": "https://github.com/oksktank/react-native-pure-chart#readme"
+  "homepage": "https://github.com/arifseft/react-native-pure-chart#readme"
 }
